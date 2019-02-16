@@ -67,7 +67,9 @@ A small library that can be used to evaluate trading plan against daily/intraday
 
 ```
     const evaluator = require('trading-plan-evaluator');
-    let updatedPlan = evaluator.evaluate(plan, quote); 
+    let result = evaluator.evaluate(plan, quote); 
+    let updatedPlan = result.plan;
+    let orders = result.orders;
 ```    
 
 ## Tests
