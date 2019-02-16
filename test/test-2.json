@@ -1,0 +1,67 @@
+{
+  "description": "Daily -> Target",
+  "plan": {
+    "symbol": "ACME",
+    "status": "waiting",
+    "prices": [
+      1000,
+      1200,
+      800
+    ]
+  },
+  "check": {
+    "stopLoss": false,
+    "target": true,
+
+    "_short": {
+      "executedEntry" : 1000,
+      "executedTarget": 800
+    },
+    "_long": {
+      "executedEntry" : 1000,
+      "executedTarget": 1200
+    }
+  },
+  "status": [
+    "waiting",
+    "in-progress",
+    "completed"
+  ],
+  "quotes": {
+    "_long" : [
+      {
+        "type": "daily",
+        "low": 1050,
+        "high": 1250
+      },
+      {
+        "type": "daily",
+        "low": 950,
+        "high": 1050
+      },
+      {
+        "type": "daily",
+        "low": 1050,
+        "high": 1250
+      }
+    ],
+    "_short" : [
+      {
+        "type": "daily",
+        "low": 750,
+        "high": 950
+      },
+      {
+        "type": "daily",
+        "low": 950,
+        "high": 1050
+      },
+      {
+        "type": "daily",
+        "low": 750,
+        "high": 950
+      }
+    ]
+  }
+}
+

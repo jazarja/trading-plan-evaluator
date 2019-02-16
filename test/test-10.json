@@ -1,0 +1,55 @@
+{
+  "description": "Daily (w/ Gap) -> In Progress",
+  "plan": {
+    "symbol": "ACME",
+    "status": "waiting",
+    "prices": [
+      1000,
+      1200,
+      800
+    ]
+  },
+  "check": {
+    "stopLoss": false,
+    "target": false,
+
+    "_short": {
+      "executedEntry" : 1050
+    },
+    "_long": {
+      "executedEntry" : 950
+    }
+  },
+  "status": [
+    "waiting",
+    "in-progress",
+    "completed"
+  ],
+  "quotes": {
+    "_long" : [
+      {
+        "type": "daily",
+        "low": 1050,
+        "high": 1250
+      },
+      {
+        "type": "daily",
+        "low": 850,
+        "high": 950
+      }
+    ],
+    "_short" : [
+      {
+        "type": "daily",
+        "low": 750,
+        "high": 950
+      },
+      {
+        "type": "daily",
+        "low": 1050,
+        "high": 1150
+      }
+    ]
+  }
+}
+

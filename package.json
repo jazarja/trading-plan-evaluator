@@ -1,0 +1,35 @@
+{
+  "name": "trading-plan-evaluator",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "James Azarja",
+  "license": "ISC",
+  "dependencies": {
+    "bluebird": "^3.5.1",
+    "debug": "^4.1.1",
+    "dotenv": "^5.0.1",
+    "expression-eval": "^1.4.0",
+    "lodash": "^4.17.5",
+    "moment": "^2.21.0"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "chai-as-promised": "^7.1.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jazarja/trading-plan-evaluator.git"
+  },
+  "keywords": [
+    "stock",
+    "stock trading",
+    "market trading",
+    "stock market",
+    "trading plan",
+    "trader"
+  ]
+}

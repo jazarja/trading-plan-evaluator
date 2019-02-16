@@ -1,0 +1,53 @@
+{
+  "description": "Intraday -> In Progress",
+  "plan": {
+    "symbol": "ACME",
+    "status": "waiting",
+    "prices": [
+      1000,
+      1200,
+      800
+    ]
+  },
+  "check": {
+    "stopLoss": false,
+    "target": false,
+    "executedEntry" : 1000
+  },
+  "status": [
+    "waiting",
+    "in-progress",
+    "in-progress"
+  ],
+  "quotes": {
+    "_long" : [
+      {
+        "type": "intraday",
+        "last": 1200
+      },
+      {
+        "type": "intraday",
+        "last": 1000
+      },
+      {
+        "type": "intraday",
+        "last": 1100
+      }
+    ],
+    "_short" : [
+      {
+        "type": "intraday",
+        "last": 900
+      },
+      {
+        "type": "intraday",
+        "last": 1000
+      },
+      {
+        "type": "intraday",
+        "last": 900
+      }
+    ]
+  }
+}
+

@@ -1,0 +1,67 @@
+{
+  "description": "Daily -> Stop Loss (w/ Gap)",
+  "plan": {
+    "symbol": "ACME",
+    "status": "waiting",
+    "prices": [
+      1000,
+      1200,
+      800
+    ]
+  },
+  "check": {
+    "stopLoss": true,
+    "target": false,
+
+    "_short": {
+      "executedEntry" : 1000,
+      "executedStopLoss": 1200
+    },
+    "_long": {
+      "executedEntry" : 1000,
+      "executedStopLoss": 800
+    }
+  },
+  "status": [
+    "waiting",
+    "in-progress",
+    "completed"
+  ],
+  "quotes": {
+    "_long" : [
+      {
+        "type": "daily",
+        "low": 1050,
+        "high": 1250
+      },
+      {
+        "type": "daily",
+        "low": 950,
+        "high": 1050
+      },
+      {
+        "type": "daily",
+        "low": 750,
+        "high": 950
+      }
+    ],
+    "_short" : [
+      {
+        "type": "daily",
+        "low": 750,
+        "high": 950
+      },
+      {
+        "type": "daily",
+        "low": 950,
+        "high": 1050
+      },
+      {
+        "type": "daily",
+        "low": 1150,
+        "high": 1250
+      }
+    ]
+  }
+}
+

@@ -1,0 +1,62 @@
+{
+  "description": "Expression evaluation",
+  "plan": {
+    "symbol": "ACME",
+    "status": "waiting",
+    "prices": [
+      "price > ma200 && volume > (2 * vma20)",
+      "price < ma20",
+      "price < ma200"
+    ]
+  },
+  "check": {
+    "stopLoss": false,
+    "target": false,
+
+    "_short": {
+      "executedEntry" : 950
+    },
+    "_long": {
+      "executedEntry" : 950
+    }
+  },
+  "status": [
+    "waiting",
+    "in-progress"
+  ],
+  "quotes": {
+    "_long" : [
+      {
+        "type": "daily",
+        "close": 1050,
+        "ma200" : 800,
+        "volume" : 1000,
+        "vma20" : 3000
+      },
+      {
+        "type": "daily",
+        "close": 950,
+        "ma200" : 800,
+        "volume" : 10000,
+        "vma20" : 3000
+      }
+    ],
+    "_short" : [
+      {
+        "type": "daily",
+        "close": 1050,
+        "ma200" : 800,
+        "volume" : 1000,
+        "vma20" : 3000
+      },
+      {
+        "type": "daily",
+        "close": 950,
+        "ma200" : 800,
+        "volume" : 10000,
+        "vma20" : 3000
+      }
+    ]
+  }
+}
+

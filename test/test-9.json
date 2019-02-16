@@ -1,0 +1,59 @@
+{
+  "description": "Realtime -> In Progress",
+  "plan": {
+    "symbol": "ACME",
+    "status": "waiting",
+    "prices": [
+      1000,
+      1200,
+      800
+    ]
+  },
+  "check": {
+    "stopLoss": false,
+    "target": false,
+    "executedEntry" : 1000
+  },
+  "status": [
+    "waiting",
+    "in-progress",
+    "in-progress"
+  ],
+  "quotes": {
+    "_long" : [
+      {
+        "type": "realtime",
+        "bid" : 1200,
+        "ask" : 1225
+      },
+      {
+        "type": "realtime",
+        "bid" : 975,
+        "ask" : 1000
+      },
+      {
+        "type": "realtime",
+        "bid" : 1075,
+        "ask" : 1100
+      }
+    ],
+    "_short" : [
+      {
+        "type": "realtime",
+        "bid" : 800,
+        "ask" : 825
+      },
+      {
+        "type": "realtime",
+        "bid" : 1000,
+        "ask" : 1025
+      },
+      {
+        "type": "realtime",
+        "bid" : 900,
+        "ask" : 925
+      }
+    ]
+  }
+}
+

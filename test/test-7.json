@@ -1,0 +1,65 @@
+{
+  "description": "Realtime -> Stop Loss",
+  "plan": {
+    "symbol": "ACME",
+    "status": "waiting",
+    "prices": [
+      1000,
+      1200,
+      800
+    ]
+  },
+  "check": {
+    "stopLoss": true,
+    "target": false,
+    "executedEntry" : 1000,
+    "_short": {
+      "executedStopLoss": 1225
+    },
+    "_long": {
+      "executedStopLoss": 775
+    }
+  },
+  "status": [
+    "waiting",
+    "in-progress",
+    "completed"
+  ],
+  "quotes": {
+    "_long" : [
+      {
+        "type": "realtime",
+        "bid" : 1200,
+        "ask" : 1225
+      },
+      {
+        "type": "realtime",
+        "bid" : 975,
+        "ask" : 1000
+      },
+      {
+        "type": "realtime",
+        "bid" : 775,
+        "ask" : 800
+      }
+    ],
+    "_short" : [
+      {
+        "type": "realtime",
+        "bid" : 800,
+        "ask" : 825
+      },
+      {
+        "type": "realtime",
+        "bid" : 1000,
+        "ask" : 1025
+      },
+      {
+        "type": "realtime",
+        "bid" : 1200,
+        "ask" : 1225
+      }
+    ]
+  }
+}
+
